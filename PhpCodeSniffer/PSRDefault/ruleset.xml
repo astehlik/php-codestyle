@@ -20,5 +20,10 @@
     <rule ref="Squiz.Functions.MultiLineFunctionDeclaration">
         <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.FirstParamSpacing" />
     </rule>
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
+        <properties>
+            <property name="ignoreBlankLines" value="false"/>
+        </properties>
+    </rule>
 
 </ruleset>
