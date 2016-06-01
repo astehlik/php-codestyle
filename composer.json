@@ -1,0 +1,12 @@
+{
+    "name": "de-swebhosting/php-codestyle",
+    "description": "Collection of code style check utilites for PHP.",
+    "type": "library",
+    "license": "GPL3+",
+    "authors": [
+        {
+            "name": "Alexander Stehlik",
+            "email": "alexander.stehlik@gmail.com"
+        }
+    ]
+}
