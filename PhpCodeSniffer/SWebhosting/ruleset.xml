@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<ruleset name="SWebhosting">
+ <description>A collection of additional sniffs.</description>
+</ruleset>
