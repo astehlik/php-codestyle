@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ruleset name="PSRLaravel">
+
+    <description>Includes PSRDefault coding standard and makes adjustments for Laravel.</description>
+
+    <rule ref="PSRDefault"/>
+
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <exclude-pattern>/database/seeds/*</exclude-pattern>
+        <exclude-pattern>/database/migrations/*</exclude-pattern>
+    </rule>
+
+</ruleset>
