@@ -1,33 +1,18 @@
 <?php
 /**
- * Squiz_Sniffs_WhiteSpace_FunctionClosingBraceSpaceSniff.
+ * Checks that there is one empty line before the closing brace of a function.
  *
- * PHP version 5
- *
- * @category  PHP
- * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
- * @author    Marc McIntyre <mmcintyre@squiz.net>
- * @copyright 2006-2014 Squiz Pty Ltd (ABN 77 084 670 600)
+ * @copyright 2006-2015 Squiz Pty Ltd (ABN 77 084 670 600)
  * @license   https://github.com/squizlabs/PHP_CodeSniffer/blob/master/licence.txt BSD Licence
- * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
 
-/**
- * Based on Squiz_Sniffs_WhiteSpace_FunctionClosingBraceSpaceSniff.
- *
- * Makes sure there is no empty line before the closing brace of a function.
- *
- * @category  PHP
- * @package   PHP_CodeSniffer
- * @author    Greg Sherwood <gsherwood@squiz.net>
- * @author    Marc McIntyre <mmcintyre@squiz.net>
- * @copyright 2006-2014 Squiz Pty Ltd (ABN 77 084 670 600)
- * @license   https://github.com/squizlabs/PHP_CodeSniffer/blob/master/licence.txt BSD Licence
- * @version   Release: @package_version@
- * @link      http://pear.php.net/package/PHP_CodeSniffer
- */
-class SWebhosting_Sniffs_WhiteSpace_FunctionClosingBraceSpaceSniff implements PHP_CodeSniffer_Sniff
+namespace PHP_CodeSniffer\Standards\SWebhosting\Sniffs\WhiteSpace;
+
+use PHP_CodeSniffer\Files\File;
+use PHP_CodeSniffer\Sniffs\Sniff;
+
+class FunctionClosingBraceSpaceSniff implements Sniff
 {
     /**
      * A list of tokenizers this sniff supports.
@@ -42,13 +27,13 @@ class SWebhosting_Sniffs_WhiteSpace_FunctionClosingBraceSpaceSniff implements PH
     /**
      * Processes this test, when one of its tokens is encountered.
      *
-     * @param PHP_CodeSniffer_File $phpcsFile The file being scanned.
+     * @param \PHP_CodeSniffer\Files\File $phpcsFile The file being scanned.
      * @param int $stackPtr The position of the current token
-     *                                        in the stack passed in $tokens.
+     *                                               in the stack passed in $tokens.
      *
      * @return void
      */
-    public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
+    public function process(File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();
 
@@ -116,11 +101,11 @@ class SWebhosting_Sniffs_WhiteSpace_FunctionClosingBraceSpaceSniff implements PH
                     }
 
                     $phpcsFile->fixer->endChangeset();
-                }
+                }//end if
             }
-        }
+        }//end if
 
-    }
+    }//end register()
 
     /**
      * Returns an array of tokens this test wants to listen for.
@@ -133,5 +118,5 @@ class SWebhosting_Sniffs_WhiteSpace_FunctionClosingBraceSpaceSniff implements PH
             T_FUNCTION,
             T_CLOSURE,
         ];
-    }
-}
+    }//end process()
+}//end class

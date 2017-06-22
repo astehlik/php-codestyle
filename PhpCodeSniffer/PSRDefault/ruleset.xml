@@ -31,7 +31,7 @@
     <!-- See: https://github.com/squizlabs/PHP_CodeSniffer/pull/972 -->
     <rule ref="SWebhosting.WhiteSpace.MemberVarSpacing">
         <properties>
-            <property name="firstVarException" value="true" />
+            <property name="firstMemberSpacing" value="0" />
         </properties>
     </rule>
     <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace" />
