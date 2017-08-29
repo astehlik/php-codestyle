@@ -34,10 +34,4 @@
     <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace"/>
     <rule ref="SWebhosting.WhiteSpace.FunctionClosingBraceSpace"/>
 
-    <rule ref="Generic.WhiteSpace.ScopeIndent">
-        <properties>
-            <property name="exact" value="true"/>
-        </properties>
-    </rule>
-
 </ruleset>

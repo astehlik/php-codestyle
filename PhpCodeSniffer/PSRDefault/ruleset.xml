@@ -45,10 +45,4 @@
     <rule ref="Squiz.Arrays.ArrayBracketSpacing" />
     <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
 
-    <rule ref="Generic.WhiteSpace.ScopeIndent">
-        <properties>
-            <property name="exact" value="true"/>
-        </properties>
-    </rule>
-
 </ruleset>
