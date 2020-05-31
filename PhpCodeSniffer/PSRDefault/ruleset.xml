@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <ruleset name="PSRDefault">
-
     <description>Includes all PSR coding standard and some additional checks.</description>
 
     <rule ref="PSR1" />
@@ -45,5 +44,5 @@
     </rule>
     <rule ref="Squiz.Arrays.ArrayBracketSpacing" />
     <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
-
+    <rule ref="Squiz.NamingConventions.ValidVariableName"/>
 </ruleset>
