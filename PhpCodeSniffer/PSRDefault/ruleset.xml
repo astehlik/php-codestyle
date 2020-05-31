@@ -44,5 +44,8 @@
     </rule>
     <rule ref="Squiz.Arrays.ArrayBracketSpacing" />
     <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
-    <rule ref="Squiz.NamingConventions.ValidVariableName"/>
+
+    <rule ref="Squiz.NamingConventions.ValidVariableName">
+        <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore" />
+    </rule>
 </ruleset>
