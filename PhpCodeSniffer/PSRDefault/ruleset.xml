@@ -2,8 +2,7 @@
 <ruleset name="PSRDefault">
     <description>Includes all PSR coding standard and some additional checks.</description>
 
-    <rule ref="PSR1" />
-    <rule ref="PSR2" />
+    <rule ref="PSR12" />
     <rule ref="Squiz.Strings.DoubleQuoteUsage" />
     <rule ref="Squiz.Commenting.InlineComment">
         <exclude name="Squiz.Commenting.InlineComment.Empty" />
