@@ -8,5 +8,9 @@
             "name": "Alexander Stehlik",
             "email": "alexander.stehlik@gmail.com"
         }
-    ]
+    ],
+	"suggest": {
+		"squizlabs/php_codesniffer": "Required for using the PhpCodeSniffer rules, latest version 3.5.5 with PSR12 support recommended!",
+		"phpmd/phpmd": "Requied for using the PhpMm rules"
+	}
 }
