@@ -9,16 +9,9 @@ return [
     '@PSR2' => true,
     '@PSR12' => true,
     '@PHP71Migration:risky' => true,
-    'concat_space' => ['spacing' => 'one'],
-    'yoda_style' => [
-        'equal' => false,
-        'identical' => false,
-        'less_and_greater' => null,
-    ],
     'cast_spaces' => ['space' => 'none'],
+    'concat_space' => ['spacing' => 'one'],
     'native_function_invocation' => ['include' => []],
-    'phpdoc_align' => ['align' => 'left'],
-    'phpdoc_types_order' => ['null_adjustment' => 'always_last'],
     'ordered_class_elements' => [
         'sort_algorithm' => 'alpha',
         'order' => [
@@ -47,5 +40,12 @@ return [
             'method_protected',
             'method_private',
         ],
+    ],
+    'phpdoc_align' => ['align' => 'left'],
+    'phpdoc_types_order' => ['null_adjustment' => 'always_last'],
+    'yoda_style' => [
+        'equal' => false,
+        'identical' => false,
+        'less_and_greater' => null,
     ],
 ];
