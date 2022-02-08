@@ -11,6 +11,7 @@ return [
     '@PHP71Migration:risky' => true,
     'cast_spaces' => ['space' => 'none'],
     'concat_space' => ['spacing' => 'one'],
+    'multiline_whitespace_before_semicolons' => ['strategy' => 'no_multi_line'],
     'native_function_invocation' => ['include' => []],
     'ordered_class_elements' => [
         'sort_algorithm' => 'alpha',
