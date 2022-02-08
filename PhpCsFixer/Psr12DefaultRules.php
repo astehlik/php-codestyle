@@ -9,9 +9,35 @@ return [
     '@PSR2' => true,
     '@PSR12' => true,
     '@PHP71Migration:risky' => true,
+    // Remove: break, case, continue, default, return, throw
+    // See: https://github.com/FriendsOfPHP/PHP-CS-Fixer/blob/master/doc/rules/whitespace/blank_line_before_statement.rst#rule-sets
+    'blank_line_before_statement' => [
+        'statements' => [
+            'declare',
+            'exit',
+            'goto',
+            'include',
+            'include_once',
+            'phpdoc',
+            'require',
+            'require_once',
+            'switch',
+            'try',
+        ],
+    ],
     'cast_spaces' => ['space' => 'none'],
+    'class_attributes_separation' => [
+        'elements' => [
+            'const' => 'one',
+            'method' => 'one',
+            'property' => 'one',
+            'trait_import' => 'none',
+        ],
+    ],
     'concat_space' => ['spacing' => 'one'],
+    'increment_style' => ['style' => 'post'],
     'multiline_whitespace_before_semicolons' => ['strategy' => 'no_multi_line'],
+    'native_constant_invocation' => false,
     'native_function_invocation' => ['include' => []],
     'ordered_class_elements' => [
         'sort_algorithm' => 'alpha',
@@ -45,12 +71,16 @@ return [
     'phpdoc_align' => ['align' => 'left'],
     'phpdoc_to_comment' => [
         'ignored_tags' => [
+            'lang',
+            'noinspection',
             'todo',
             'uses',
             'var',
         ],
     ],
     'phpdoc_types_order' => ['null_adjustment' => 'always_last'],
+    'php_unit_internal_class' => false,
+    'php_unit_test_class_requires_covers' => false,
     'yoda_style' => [
         'equal' => false,
         'identical' => false,
