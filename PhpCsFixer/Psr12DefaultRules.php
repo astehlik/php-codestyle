@@ -73,6 +73,7 @@ return [
         'ignored_tags' => [
             'lang',
             'noinspection',
+            'psalm-suppress',
             'todo',
             'uses',
             'var',
