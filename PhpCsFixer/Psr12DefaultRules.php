@@ -42,6 +42,13 @@ return [
         ],
     ],
     'phpdoc_align' => ['align' => 'left'],
+    'phpdoc_to_comment' => [
+        'ignored_tags' => [
+            'todo',
+            'uses',
+            'var',
+        ],
+    ],
     'phpdoc_types_order' => ['null_adjustment' => 'always_last'],
     'yoda_style' => [
         'equal' => false,
