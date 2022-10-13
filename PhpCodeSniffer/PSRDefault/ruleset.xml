@@ -25,11 +25,9 @@
             <property name="ignoreBlankLines" value="false"/>
         </properties>
     </rule>
-    <!-- We use a custom sniff here because we want to use the firstVarException property. -->
-    <!-- See: https://github.com/squizlabs/PHP_CodeSniffer/pull/972 -->
-    <rule ref="SWebhosting.WhiteSpace.MemberVarSpacing">
+    <rule ref="Squiz.WhiteSpace.MemberVarSpacing">
         <properties>
-            <property name="firstMemberSpacing" value="0" />
+            <property name="spacingBeforeFirst" value="0" />
         </properties>
     </rule>
     <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace" />
