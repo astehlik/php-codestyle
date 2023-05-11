@@ -7,7 +7,14 @@
     <description>PHPMD rules for TYPO3 Extensions</description>
 
     <rule ref="rulesets/cleancode.xml">
+        <exclude name="MissingImport"/>
         <exclude name="StaticAccess"/>
+    </rule>
+
+    <rule ref="rulesets/cleancode.xml/MissingImport">
+        <properties>
+            <property name="ignore-global" value="true"/>
+        </properties>
     </rule>
 
     <rule ref="rulesets/codesize.xml"/>
