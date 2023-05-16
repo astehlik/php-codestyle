@@ -74,6 +74,7 @@ return [
             'lang',
             'noinspection',
             'psalm-suppress',
+            'see',
             'todo',
             'uses',
             'var',
