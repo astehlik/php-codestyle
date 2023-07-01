@@ -35,6 +35,11 @@ return [
         ],
     ],
     'concat_space' => ['spacing' => 'one'],
+    'global_namespace_import' => [
+        'import_classes' => true,
+        'import_constants' => false,
+        'import_functions' => false
+    ],
     'increment_style' => ['style' => 'post'],
     'multiline_whitespace_before_semicolons' => ['strategy' => 'no_multi_line'],
     'native_constant_invocation' => false,
