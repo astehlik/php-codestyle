@@ -18,6 +18,7 @@
     </rule>
     <rule ref="Squiz.Functions.MultiLineFunctionDeclaration">
         <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.FirstParamSpacing" />
+        <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" />
     </rule>
 
     <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
@@ -31,7 +32,9 @@
         </properties>
     </rule>
     <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace" />
-    <rule ref="SWebhosting.WhiteSpace.FunctionClosingBraceSpace" />
+    <rule ref="Squiz.WhiteSpace.ScopeClosingBrace">
+        <exclude name="Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore" />
+    </rule>
 
     <rule ref="Squiz.Arrays.ArrayDeclaration">
         <exclude name="Squiz.Arrays.ArrayDeclaration.ValueNotAligned" />
