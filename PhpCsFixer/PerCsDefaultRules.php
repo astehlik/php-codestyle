@@ -71,6 +71,7 @@ return [
             'method_private',
         ],
     ],
+    'ordered_imports' => ['sort_algorithm' => 'alpha'],
     'phpdoc_align' => ['align' => 'left'],
     'phpdoc_to_comment' => [
         'ignored_tags' => [
