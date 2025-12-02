@@ -6,7 +6,8 @@ return [
     '@PhpCsFixer' => true,
     '@PhpCsFixer:risky' => true,
     '@PER-CS' => true,
-    '@PHP71Migration:risky' => true,
+    '@auto' => true,
+    '@auto:risky' => true,
     // Remove: break, case, continue, default, return, throw
     // See: https://github.com/FriendsOfPHP/PHP-CS-Fixer/blob/master/doc/rules/whitespace/blank_line_before_statement.rst#rule-sets
     'blank_line_before_statement' => [
