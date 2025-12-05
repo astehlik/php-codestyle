@@ -93,7 +93,6 @@ return [
     ],
     'phpdoc_types_order' => ['null_adjustment' => 'always_last'],
     'php_unit_internal_class' => false,
-    'php_unit_test_case_static_method_calls' => ['call_type' => 'self'],
     'php_unit_test_class_requires_covers' => false,
     'string_implicit_backslashes' => ['single_quoted' => 'escape'],
     'yoda_style' => [
