@@ -2,15 +2,6 @@
 
 declare(strict_types=1);
 
-$phpUnitTestCaseStaticMethodCallsConfig = (new \PhpCsFixer\RuleSet\RuleSet(['@auto:risky' => true]))
-    ->getRuleConfiguration('php_unit_test_case_static_method_calls');
-
-if (!is_array($phpUnitTestCaseStaticMethodCallsConfig)) {
-    throw new \RuntimeException('Ruleset @auto:risky does not contain php_unit_test_case_static_method_calls rule config.');
-}
-
-$phpUnitTestCaseStaticMethodCallsConfig['call_type'] = 'self';
-
 return [
     '@PhpCsFixer' => true,
     '@PhpCsFixer:risky' => true,
@@ -102,7 +93,7 @@ return [
     ],
     'phpdoc_types_order' => ['null_adjustment' => 'always_last'],
     'php_unit_internal_class' => false,
-    'php_unit_test_case_static_method_calls' => $phpUnitTestCaseStaticMethodCallsConfig,
+    'php_unit_test_case_static_method_calls' => ['call_type' => 'this'],
     'php_unit_test_class_requires_covers' => false,
     'string_implicit_backslashes' => ['single_quoted' => 'escape'],
     'yoda_style' => [
