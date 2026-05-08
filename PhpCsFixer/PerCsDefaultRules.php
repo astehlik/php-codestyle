@@ -33,6 +33,7 @@ return [
             'trait_import' => 'none',
         ],
     ],
+    'comment_to_phpdoc' => ['ignored_tags' => ['extensionScannerIgnoreLine']],
     'global_namespace_import' => [
         'import_classes' => true,
         'import_constants' => false,
